@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--
+Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> </script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- animated.css -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<style>
+body {
+	font-family: "Open Sans", sans-serif;
+}
+ .navbar .navbar-nav .nav-item:nth-child(4) .nav-link{
+  color:#a5410f;
+  font-weight: 900;
+}
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 25px 0 50px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #ffdc12;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.carousel {
+	width: 650px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 340px;
+}
+.carousel .carousel-item a {
+	color: #eb7245;
+}
+.carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {	
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
+}
+.carousel .overview b {
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
+}
+.carousel .star-rating i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #999;
+	text-shadow: none;
+	top: 4px;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.carousel-control-prev {
+	left: auto;
+	right: 40px;
+}
+.carousel-control-next i {
+	margin-right: -2px;
+}
+.carousel .carousel-indicators {
+	bottom: 15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border: none;
+}
+.carousel-indicators li.active {		
+	background: #888;		
+}
+</style>
+<body>
+    <div class="container">
+        <div class="hero">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><i class="fas fa-digital-tachograph"></i>DigitalCraft Studio</a> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Test.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index1.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+<h2>Testimonials</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Carousel indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- Wrapper for carousel items -->
+	<div class="carousel-inner">		
+		<div class="carousel-item active">
+			<div class="img-box"><img src="./r3.jpg" alt=""></div>
+			<p class="testimonial">Its a nice platform first of all I get to know about this platform from my friend .Its a great experience they not only convert our ideas into products they explain the flow of the project which is really helpful for me to gain some insights..</p>
+			<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+			<div class="star-rating">
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+				</ul>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="img-box"><img src="./r2.jpg" alt=""></div>
+			<p class="testimonial">This is the wonderful platform I have ever seen.The team is very dedicated,punctual and hardworking which i like the most. </p>
+			<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+			<div class="star-rating">
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+				</ul>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="img-box"><img src="./r1.jpg" alt=""></div>
+			<p class="testimonial">To be honest I was amazed by the skills of teams from digital craft as I'm a students I've learnt a lot of things from them which is really helpful for me to learn how to convert some ideas into projects.</p>
+			<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+			<div class="star-rating">
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<!-- Carousel controls -->
+	<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+		<i class="fa fa-angle-left"></i>
+	</a>
+	<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+		<i class="fa fa-angle-right"></i>
+	</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>
